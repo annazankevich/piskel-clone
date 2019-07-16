@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Piskel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?9ukd8d">
+</head>
+<body class="flex">
+<div class="nav-pannel shadow">
+    <div class=nav>
+        <div class="nav-image-1"></div>
+        <h1 class="title">Piskel</h1>
+    </div>
+    <div class="nav-image-2"></div>
+</div>
+<section class="wrapper">
+    <div class="instruments">
+        <div class="pen-size">
+            <div class="pen-size-option size-picker-option" id="size-picker-1" data-size="1"></div>
+            <div class="pen-size-option size-picker-option" id="size-picker-2" data-size="2"></div>
+            <div class="pen-size-option size-picker-option" id="size-picker-3" data-size="3"></div>
+            <div class="pen-size-option size-picker-option" id="size-picker-4" data-size="4"></div>
+        </div>
+        <div class="instruments-area pallete">
+            <button class="tools pentool" id="pen"></button>
+            <button class="tools paintbucket" id="bucket"></button>
+            <button class="tools painttool" id="paintall"></button>
+            <button class="tools erasertool" id="eraser"></button>
+            <button class="tools colorpicktool" id="colorPicker"></button>
+            <button class="tools movetool" id="move"></button>
+            <button class="tools diseringtool" id="diseringtool"></button>
+            <button class="tools pentool" id="pens"></button>
+            <input class="tools" type="color" id="colorInput" name="body"
+                   value="#e66465">
+        </div>
+    </div>
+    <div  class="frame-wrapper">
+        <div class="frame" id="frame-preview-0"></div>
+        <div class="frame-control" id="addFrame">Add new frame</div>
+    </div>
+    <div class="canvas">
+        <canvas id="canvas" width="600" height="600" class="canvas-area"></canvas>
+
+    </div>
+    <div class="animation-container">
+        <button id="newWindow">Open</button>
+        <div class="animation" id="animation"></div>
+        <div class="fps">
+            <span id="display-fps" class="display-fps">12 FPS</span>
+            <input id="preview-fps" class="range-fps" type="range" min="0" max="24" value="12">
+        </div>
+        <div>Resize:</div>
+        <div><label>Width:</label><input type='number' id='sizeWidthInput' value=32></div>
+        <div><label>Height:</label><input type='number' id='sizeHeightInput' value=32></div>
+        <div><label>Maintain aspect ratio:</label><input type='checkbox' id='sizeAspectRatioInput' checked></div>
+        <button id="gridBtn">Toggle Grid</button>
+        <button id="clearBtn">Clear Grid</button>
+    </div>
+    </div>
+</section>
+<script src="bundle.js"></script>
+</body>
+</html>
